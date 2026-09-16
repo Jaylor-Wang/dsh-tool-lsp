@@ -3,6 +3,5 @@ node_modules/
 *.tgz
 .DS_Store
 Thumbs.db
-plan.md
 Development Plan.md
 
