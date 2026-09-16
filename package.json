@@ -1,0 +1,52 @@
+{
+  "name": "dsh-tool-lsp",
+  "version": "0.1.0",
+  "description": "LSP action surface for DeepSeek Harness: diagnostics, formatting, rename, code actions and symbols over real language servers. Hot-mountable from dshmarket.",
+  "type": "module",
+  "main": "index.js",
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "cordis",
+    "lsp",
+    "language-server",
+    "diagnostics",
+    "format",
+    "rename"
+  ],
+  "author": "Jaylor-Wang",
+  "license": "MIT",
+  "homepage": "https://github.com/Jaylor-Wang/dsh-tool-lsp#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jaylor-Wang/dsh-tool-lsp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Jaylor-Wang/dsh-tool-lsp/issues"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "peerDependencies": {
+    "@deepseek-ai/dsh-tools": "*",
+    "@deepseek-ai/schemastery": "*"
+  },
+  "files": [
+    "index.js",
+    "lib",
+    "cordis.patch.yml",
+    "README.md",
+    "README.zh.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --test --test-timeout=30000 test/stage1.test.mjs test/stage2.test.mjs test/stage3.test.mjs test/stage4.test.mjs test/patch-config.test.mjs",
+    "verify:servers": "node test/verify-servers.mjs"
+  }
+}

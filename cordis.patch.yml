@@ -1,0 +1,20 @@
+# dsh-tool-lsp bundle patch: inserts the LSP tools into the profile layer stack.
+#
+# Plain `id`/`name` insert rows only, on purpose — this is a HARD constraint, not a
+# style choice. dshmarket hot-mounts a plugin by re-reading this file and parsing it
+# with its `parseSimplePatch()` (dshmarket/lib/hot.js), which accepts ONLY
+# `- insert:` / `- id:` / `name:` lines and returns null on anything else. A
+# `config:`/`inject:` block here makes the plugin impossible to switch on or off
+# from the market without a harness restart — and since this package is NOT in
+# `dsh.profile.bundles`, a restart would not mount it either.
+#
+# Consequences, both deliberate:
+#   - `inject` is declared in index.js (`export const inject = [...]`), never here.
+#   - Every config key has a schema default, so an empty row is a valid composition.
+#     Users customise through the PATCH layer instead:
+#       - id: lsp
+#         config:
+#           servers: { ... }
+- insert:
+    - id: lsp
+      name: dsh-tool-lsp
