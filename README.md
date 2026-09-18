@@ -1,5 +1,11 @@
 # dsh-tool-lsp
 
+English | [中文](README.zh.md)
+
+[![npm version](https://img.shields.io/npm/v/dsh-tool-lsp.svg)](https://www.npmjs.com/package/dsh-tool-lsp)
+[![license](https://img.shields.io/github/license/Jaylor-Wang/dsh-tool-lsp.svg)](LICENSE)
+[![GitHub release](https://img.shields.io/github/v/release/Jaylor-Wang/dsh-tool-lsp.svg)](https://github.com/Jaylor-Wang/dsh-tool-lsp/releases)
+
 An LSP tool surface for [DeepSeek Harness](https://github.com/deepseek-ai/dsh): real
 language-server diagnostics, formatting, rename, code actions and symbol navigation,
 exposed as five tools the model can call directly.

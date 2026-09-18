@@ -1,8 +1,13 @@
 # dsh-tool-lsp
 
+[English](README.md) | 中文
+
+[![npm version](https://img.shields.io/npm/v/dsh-tool-lsp.svg)](https://www.npmjs.com/package/dsh-tool-lsp)
+[![license](https://img.shields.io/github/license/Jaylor-Wang/dsh-tool-lsp.svg)](LICENSE)
+[![GitHub release](https://img.shields.io/github/v/release/Jaylor-Wang/dsh-tool-lsp.svg)](https://github.com/Jaylor-Wang/dsh-tool-lsp/releases)
+
 给 [DeepSeek Harness](https://github.com/deepseek-ai/dsh) 用的 LSP 工具面：把真实语言服务器
 的诊断、格式化、重命名、代码动作和符号导航，变成模型可直接调用的 5 个工具。
-
 ## 工具
 
 | 工具 | 作用 | 会写盘 |
