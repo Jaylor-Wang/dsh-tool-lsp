@@ -1,6 +1,6 @@
 {
   "name": "dsh-tool-lsp",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "LSP action surface for DeepSeek Harness: diagnostics, formatting, rename, code actions and symbols over real language servers. Hot-mountable from dshmarket.",
   "type": "module",
   "main": "index.js",

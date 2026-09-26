@@ -1,6 +1,6 @@
 # dsh-tool-lsp
 
-English | [中文](README.zh.md)
+English | [中文说明](https://github.com/Jaylor-Wang/dsh-tool-lsp/blob/main/README.zh.md)
 
 [![npm version](https://img.shields.io/npm/v/dsh-tool-lsp.svg)](https://www.npmjs.com/package/dsh-tool-lsp)
 [![license](https://img.shields.io/github/license/Jaylor-Wang/dsh-tool-lsp.svg)](LICENSE)
